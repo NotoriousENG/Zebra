@@ -55,22 +55,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\bin\Debug-windows-x86_64.Zebra\</OutDir>
-    <IntDir>..\bin-int\Debug-windows-x86_64.Zebra\</IntDir>
+    <OutDir>..\bin\Debug-windows-x86_64\Zebra\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86_64\Zebra\</IntDir>
     <TargetName>Zebra</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\Release-windows-x86_64.Zebra\</OutDir>
-    <IntDir>..\bin-int\Release-windows-x86_64.Zebra\</IntDir>
+    <OutDir>..\bin\Release-windows-x86_64\Zebra\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\Zebra\</IntDir>
     <TargetName>Zebra</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\Dist-windows-x86_64.Zebra\</OutDir>
-    <IntDir>..\bin-int\Dist-windows-x86_64.Zebra\</IntDir>
+    <OutDir>..\bin\Dist-windows-x86_64\Zebra\</OutDir>
+    <IntDir>..\bin-int\Dist-windows-x86_64\Zebra\</IntDir>
     <TargetName>Zebra</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
@@ -88,10 +88,10 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>..\bin\Debug-windows-x86_64.Zebra\Zebra.lib</ImportLibrary>
+      <ImportLibrary>..\bin\Debug-windows-x86_64\Zebra\Zebra.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Debug-windows-x86_64.Zebra\Zebra.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64.Zebra\Zebra.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64.Zebra\Zebra.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Debug-windows-x86_64\Zebra\Zebra.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Zebra\Zebra.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Zebra\Zebra.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -112,10 +112,10 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>..\bin\Release-windows-x86_64.Zebra\Zebra.lib</ImportLibrary>
+      <ImportLibrary>..\bin\Release-windows-x86_64\Zebra\Zebra.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Release-windows-x86_64.Zebra\Zebra.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64.Zebra\Zebra.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64.Zebra\Zebra.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Release-windows-x86_64\Zebra\Zebra.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Zebra\Zebra.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Zebra\Zebra.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
@@ -136,10 +136,10 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>..\bin\Dist-windows-x86_64.Zebra\Zebra.lib</ImportLibrary>
+      <ImportLibrary>..\bin\Dist-windows-x86_64\Zebra\Zebra.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Dist-windows-x86_64.Zebra\Zebra.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64.Zebra\Zebra.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64.Zebra\Zebra.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Dist-windows-x86_64\Zebra\Zebra.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Zebra\Zebra.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Zebra\Zebra.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

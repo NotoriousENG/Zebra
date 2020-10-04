@@ -15,8 +15,8 @@ project "Zebra"
 	kind "SharedLib"
 	language "C++"
 
-	targetdir ("bin/" .. outputdir .. ".%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. ".%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
@@ -48,7 +48,7 @@ project "Zebra"
 	filter "configurations:Debug"
 		defines "ZB_DEBUG"
 		symbols "On"
-	
+
 	filter "configurations:Release"
 		defines "ZB_RELEASE"
 		optimize "On"
@@ -62,8 +62,8 @@ project "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
 
-	targetdir ("bin/" .. outputdir .. ".%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. ".%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
@@ -73,7 +73,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include",
+		"Zebra/vendor/spdlog/include",
 		"Zebra/src"
 	}
 
@@ -95,7 +95,7 @@ project "Sandbox"
 	filter "configurations:Debug"
 		defines "ZB_DEBUG"
 		symbols "On"
-	
+
 	filter "configurations:Release"
 		defines "ZB_RELEASE"
 		optimize "On"
