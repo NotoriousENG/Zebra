@@ -1,0 +1,3 @@
+[submodule "Zebra/vendor/spdlog"]
+	path = Zebra/vendor/spdlog
+	url = https://github.com/gabime/spdlog
