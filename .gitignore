@@ -342,6 +342,7 @@ healthchecksdb
 # Build/ Intermediate files
 out/
 bin/
+bin-int/
 int/
 
 CMakeSettings.json
