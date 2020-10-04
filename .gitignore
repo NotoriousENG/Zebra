@@ -339,8 +339,9 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 
-# Build files
+# Build/ Intermediate files
 out/
 bin/
+int/
 
 CMakeSettings.json
